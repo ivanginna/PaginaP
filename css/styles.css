@@ -1,0 +1,244 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    background-color: #7cceee;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .main{
+    background-color: rgb(91 91 241 / 11%);
+    margin-top: -2em;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    
+    
+  }
+
+  .main-title{
+    text-align: center;
+    text-transform:capitalize;
+    color: white;
+    
+  }
+
+  @media (min-width: 768px){ 
+    .tienda { 
+        display: flex;
+        gap: 1em;
+    }
+  }
+
+   /*Utilitarias*/
+  .container{
+       width: 80%;
+       max-width: 1280px;
+       margin-right: auto;
+       margin-left: auto;
+  }
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #592512;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #4bf0c19d;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #b84785
+}
+
+.btn-light{
+    color: black;
+    background-color: #f7d40fb4;
+}
+
+.btn-dark {
+    color: white;
+    background-color: #5D5859;
+
+}
+  /* Header */
+
+  .bg-header{
+        background-image: url('../assets/imagenes/image-portada.png');
+        height: 15em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+  }
+
+  .bg-navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 1.5em 0;
+  }
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 768px){
+       .navbar { 
+         flex-direction:row;
+         justify-content:initial;
+         margin: 1.50rem;
+        }
+   }     
+
+
+  .navbar-brand{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    
+  }
+
+  @media (min-width: 768px){ 
+    .navbar-brand {
+         flex-direction: row;
+         margin-bottom: 0;
+    }
+ }
+
+  .navbar-brand img {
+      width: 2em;
+      
+  }
+
+  .navbar-nav{
+     background-color: rgba(0, 0, 0, 0.712);
+     padding: 1em;
+     border-radius: 2.3em;
+  }
+
+  .nav-link{
+    display: inline block;
+    padding: 0.3em;
+    text-decoration: rgb(248, 245, 245);
+    color: white;
+
+  }
+
+ .nav-link:hover{
+         background-color: rgb(89, 130, 243);
+         color: rgb(255, 241, 241);
+         border-radius: 0.5em;
+     
+ }
+
+ /* Card */
+ .card {
+   
+    background-color: #9999999d;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 500;
+}
+
+.card-body p {
+    font-weight: 200;
+}
+
+/*Nosotros*/
+
+.informacion{
+    background-color: #eb799059 ;
+    align-items: center;
+    display: flex
+}
+
+.informacion-col-img{
+    background: url(../assets/imagenes/image-nosotros.png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+@media(min-width: 800px){
+    .informacion-col-img { 
+      height: 18.25em;
+    }
+}    
+
+.informacion-col-text{
+      order: 1;
+
+}
+
+@media (min-width: 768px){ 
+ .informacion { 
+    flex-direction: row;  
+  }
+  .informacion-col-img { 
+       order: 1 ;
+       flex: 1 1 0; 
+  }
+  .informacion-col-text{ 
+    order: 2;
+    flex: 1 1 0;
+}
+.informacion-body{
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.informacion-body h2{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.informacion-body p{
+    font-weight: 200;
+}
+
+ /*Footer*/
+.bg-footer{
+    background-color:#08070734 ;
+    color: white;
+}
+.bg-footer p {
+      margin: 0;
+      padding: 1em 0;
+      text-align: center;
+}
